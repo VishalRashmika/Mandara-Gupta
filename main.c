@@ -6,12 +6,14 @@
 int *shift_cipher();
 int *mandaragupta_encrypt();
 void usage();
+void logo();
 
 //Global Variables
 #define MAX_VALUE 65536
 char character;
 char text[MAX_VALUE];
 char shifted_text[MAX_VALUE];
+char test_var[MAX_VALUE];
 
 //Main Function
 int main()
@@ -20,6 +22,13 @@ int main()
 	printf("Enter The MSG to Encrypt: ");
 	fgets(text, MAX_VALUE, stdin);
 	
+	//String To Uppercase
+	for (int i = 0; text[i]!='\0'; i++) {
+      if(text[i] >= 'a' && text[i] <= 'z') {
+         	text[i] = text[i] -32;
+      }
+   	}
+
 	//Shift Cipher
 	shift_cipher(text, 5);
 	
@@ -62,7 +71,6 @@ int *shift_cipher(char str[], int key)
 }
 
 int *mandaragupta_encrypt(char *text){
-
 	char db[] = {
 		'h',
 		'E',
@@ -77,6 +85,9 @@ int *mandaragupta_encrypt(char *text){
 
 void usage(){
 	printf("TODO USAGE");
+}
+void logo(){
+	printf("TODO LOGO");
 }
 
 
