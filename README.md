@@ -2,7 +2,7 @@
 
 
 
-|	Character	|  ASCII -> Dec |				|				|				|				|
+|	Character	|  ASCII -> Dec |2<sub>nd</sub>	|				|				|				|
 | :-----------: | :-----------:	| :-----------:	| :-----------:	| :-----------:	| :-----------:	|
 |		A		|		65		|	Asapatana	|	असपत्न		 | 	  Abhaya	 |  	  अभय  	 |Peace
 |		B		|		66		|	 Akrura	    |	अक्रूर	       |		dhīra  |	धीर      	|Gentle
