@@ -38,7 +38,6 @@ int main()
 }
 
 
-
 int *shift_cipher(char str[], int key)
 {
     for (int i = 0; i <= strlen(text); i++)
