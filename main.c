@@ -4,7 +4,7 @@
 
 //Prototypes
 int *shift_cipher();
-int *mandara_crypt();
+int *mandaragupta_encrypt();
 void usage();
 
 //Global Variables
@@ -24,7 +24,7 @@ int main()
 	shift_cipher(text, 5);
 	
 	//Invoking The Main Crypt
-	mandara_crypt(shifted_text);
+	mandaragupta_encrypt(shifted_text);
 	return 0;
 }
 
@@ -61,7 +61,7 @@ int *shift_cipher(char str[], int key)
     printf("Encrypted Message : %s\n", shifted_text);
 }
 
-int *mandara_crypt(char *text){
+int *mandaragupta_encrypt(char *text){
 
 	char db[] = {
 		'h',
