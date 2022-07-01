@@ -2,7 +2,7 @@
 
 
 
-|	Character	|  ASCII -> Dec |1<sup>st</sup>Word|1<sup>st</sup>SanskritWord|				|				|
+|	Character	|  ASCII -> Dec |1 <sup>st</sup>Word|1 <sup>st</sup>Sanskrit Word|2 <sup>nd</sup>Word|2 <sup>nd</sup>Sanskrit Word|
 | :-----------: | :-----------:	| :-----------:	| :-----------:	| :-----------:	| :-----------:	|
 |		A		|		65		|	Asapatana	|	असपत्न		 | 	  Abhaya	 |  	  अभय  	 |Peace
 |		B		|		66		|	 Akrura	    |	अक्रूर	       |		dhīra  |	धीर      	|Gentle
