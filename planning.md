@@ -10,7 +10,7 @@ The trouble is you think you have time
 Let the past make you better, not bitter
 It is easy to see faults of others, but difficult to see one's own faults
 A man is not called wise because he talks and talks again; but is he peaceful, loving and fearless then he is in truth called wise
-
+/0 termination char
 
 ```
 struct key_value
