@@ -70,12 +70,11 @@ int *shift_cipher(char str[], int key)
 }
 
 int *mandaragupta_encrypt(char *text){
-	char db[] = {
-		'h',
-		'E',
-		'J',
-		
-		};
+	char db[]= {
+		'he',
+        'l',
+        'o',
+	};
 
 	printf("TODO\n");
 	printf("INSIDE THE CRYPT\n");
