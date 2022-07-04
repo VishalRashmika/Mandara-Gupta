@@ -33,3 +33,8 @@ struct key_value kv;
 kv.key = 1;
 kv.value = "foo";
 ```
+
+
+Message -> Shift Cipher -> MG ->
+
+MG -> shiftcipher -> Message
