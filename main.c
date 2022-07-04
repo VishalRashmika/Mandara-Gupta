@@ -6,6 +6,7 @@
 char *shift_cipher_encrypt();
 char *shift_cipher_decrypt();
 char *mandaragupta_encrypt();
+char *mandaragupta_decrypt();
 void usage();
 void logo();
 
@@ -148,6 +149,15 @@ char *shift_cipher_decrypt(char str[], int key){
 }
 
 char *mandaragupta_encrypt(char *text){
+    //char *test1[] = {"HELLO WOrld", "AO", "awda", "123"};
+
+	printf("TODO\n");
+	printf("INSIDE THE MG_ENCRYPT CRYPT\n");
+    //printf("%s\n", db[0]);
+	printf("%s\n", unshifted_text);
+}
+
+char *mandaragupta_decrypt(char *text){
     //char *test1[] = {"HELLO WOrld", "AO", "awda", "123"};
 
 	printf("TODO\n");

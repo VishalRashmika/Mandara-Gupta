@@ -34,7 +34,35 @@ kv.key = 1;
 kv.value = "foo";
 ```
 
+# FLOW
+```
+M = Sometimes 
+J = we 
+Q = often  
+T = lists 
+of 
+character 
+strings
+```
+### encrypt
+Message -> shift Cipher -> MG ->
+HELLO        MJQQT          sometimes. we. often. lists
 
-Message -> Shift Cipher -> MG ->
+### decrypt
+MG_encrypted_msg             -> Splitter                      -> Identifier -> shiftcipher -> Message
+sometimes. we. often. lists     sometimes, we, often, lists       MJQQT          MJQQT          HELLO
 
-MG -> shiftcipher -> Message
+## Shift Cipher
+A  N
+B  O
+C  P
+D  Q
+E  R
+F  S
+G  T
+H  U
+I  V
+J  W
+K  X
+L  Y
+M  Z
