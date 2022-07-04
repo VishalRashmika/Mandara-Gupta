@@ -1,6 +1,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<string.h>
+#include<time.h>
 
 int main(){
     // struct key_value
@@ -28,13 +29,28 @@ int main(){
     // printf("%c\n", string[5]);
     // printf("%c\n", string[6]);
 
-    char string[50] = "Hello World How are you!! !";
+    // char string[50] = "Hello World How are you!! !";
 
-    char * token = strtok(string, " ");
+    // char * token = strtok(string, " ");
 
-    while(token != NULL){
-       printf("%s\n", token);
-       token = strtok(NULL, " ");
+    // while(token != NULL){
+    //    printf("%s\n", token);
+    //    token = strtok(NULL, " ");
+    // }
+
+    int i, n;
+    time_t t;
+
+    n = 10;
+
+    srand((unsigned) time(&t));
+    
+    for(i = 0; i < n; i++){
+        printf("%d\n", rand() % 100);
     }
+
+
+
+
     return 0;
 }

@@ -156,8 +156,8 @@ char *shift_cipher_decrypt(char str[], int key){
 char *mandaragupta_encrypt(char *text){
 	printf("TODO\n");
 	printf("INSIDE THE MG_ENCRYPT CRYPT\n");
-    //printf("%s\n", db[0]);
-	printf("%s\n", unshifted_text);
+
+    
 }
 
 char *mandaragupta_decrypt(char *text){
