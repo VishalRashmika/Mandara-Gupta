@@ -46,14 +46,18 @@ char *db[] = {
     /*23*/ "1",
     /*24*/ "1",
     /*25*/ "1",
-    /*11*/ "1",
-    /*11*/ "1",
-    /*11*/ "1",
-    /*11*/ "1",
-    /*11*/ "1",
-    /*11*/ "1",
-    /*11*/ "1",
-    /*11*/ "1",
+    /*26*/ "1",
+    /*27*/ "1",
+    /*28*/ "1",
+    /*29*/ "1",
+    /*30*/ "1",
+    /*31*/ "1",
+    /*32*/ "1",
+    /*33*/ "1",
+    /*34*/ "1",
+    /*35*/ "1",
+    /*36*/ "1",
+    /*37*/ "1",
 };
 
 //Main Function
@@ -149,8 +153,6 @@ char *shift_cipher_decrypt(char str[], int key){
 }
 
 char *mandaragupta_encrypt(char *text){
-    //char *test1[] = {"HELLO WOrld", "AO", "awda", "123"};
-
 	printf("TODO\n");
 	printf("INSIDE THE MG_ENCRYPT CRYPT\n");
     //printf("%s\n", db[0]);
