@@ -26,7 +26,7 @@ char *db[] = {
     /*3*/ "The trouble is you think you have time",
     /*4*/ "Let the past make you better, not bitter",
     /*5*/ "It is easy to see faults of others, but difficult to see one's own faults",
-    /*6*/ "A man is not called wise because he talks and talks again; but is he peaceful, loving and fearless then he is in truth called wise",
+    /*6*/ "There is no fear for one whose mind is not filled with desires",
     /*7*/ "Sometimes silence is the best solution",
     /*8*/ "Radiate boundless love towards the entire world",
     /*9*/ "A disciplined mind brings happiness",
