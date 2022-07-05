@@ -38,17 +38,18 @@ int main(){
     //    token = strtok(NULL, " ");
     // }
 
-    int i, n;
-    time_t t;
+    // int i, n;
+    // time_t t;
 
-    n = 100;
+    // n = 100;
 
-    srand((unsigned) time(&t));
+    // srand((unsigned) time(&t));
     
-    for(i = 0; i < n; i++){
-        printf("%d\n", rand() % 5);
-    }
-
+    // for(i = 0; i < n; i++){
+    //     printf("%d\n", rand() % 5);
+    // }
+    int c = 2404;
+    printf("%c\n", c);
 
 
 

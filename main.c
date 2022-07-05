@@ -173,11 +173,16 @@ char *mandaragupta_encrypt(char *text){
             //strncat(encrypted_text, &character2, 1);
             strcat(encrypted_text, &character2);
         }
+        else if(character2 == 32){
+            //printf("%c\n", character2);
+            //strncat(encrypted_text, &character2, 1);
+            strcat(encrypted_text, "&character2");
+        }
         else{
             //printf("%c", character2);
-            //strncat(encrypted_text, "&character2", 1);
-            char space[] = "Damn";
-            strcat(encrypted_text, space);
+            strncat(encrypted_text, &character2, 1);
+            //char space[] = "Damn";
+            //strcat(encrypted_text, space);
         }
     }
     printf("%s\n", encrypted_text);
