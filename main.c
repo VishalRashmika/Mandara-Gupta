@@ -25,7 +25,7 @@ char test_var[MAX_VALUE];
 
 //DATABASE
 char *db[] = {
-	/*0 - space*/ "Karma has no menu, you get served what you deserve.\n",                              // 
+	/*0 - space*/ "Karma has no menu, you get served what you deserve.\n",                              //32 - 32 = 0 
     /*1 - 0*/ "If anything is worth doing, do it with all your heart.\n",                               //48 - 47 = 1 
     /*2 - 1*/ "Better to be slapped with the truth than kissed with a lie.\n",                          //49 - 47 = 2
     /*3 - 2*/ "The trouble is you think you have time.\n",                                              //50 - 47 = 3
