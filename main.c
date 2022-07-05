@@ -7,6 +7,7 @@
 char *shift_cipher_encrypt();
 char *shift_cipher_decrypt();
 char *mandaragupta_encrypt();
+char *mandaragupta_simplified_encrypt();
 char *mandaragupta_decrypt();
 void usage();
 void logo();
@@ -226,6 +227,31 @@ char *mandaragupta_decrypt(char *text){
 	printf("INSIDE THE MG_DECRYPT CRYPT\n");
     //printf("%s\n", db[0]);
 	printf("%s\n", unshifted_text);
+}
+
+char *mandaragupta_simplified_encrypt(char *text){
+    printf("INSIDE THE MG_SIMPLIFIED_ENCRYPT CRYPT\n");
+    for (int i = 0; i <= strlen(text); i++){
+        character2 = text[i];
+        int index = 0;
+        if(character2 >= 'A' && character2 <= 'Z'){
+            index = character2 - 54;
+            strcat(encrypted_text, db[index]);
+        }
+        else if(character2 >= '0' && character2 <= '9'){
+            index = character2 - 47;
+            strcat(encrypted_text, db[index]);
+        }
+        else if(character2 == 32){
+            index = character2 - 32;
+            strcat(encrypted_text, db[index]);
+        }
+        else{
+            strncat(encrypted_text, &character2, 1);
+        }
+        strcat(encrypted_text, "");
+    }
+    printf("%s", encrypted_text);
 }
 
 void usage(){
