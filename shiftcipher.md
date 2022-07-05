@@ -36,11 +36,11 @@ while(token != NULL){
 int i, n;
     time_t t;
 
-    n = 100;
+    n = 100; //amnt of no.
 
     srand((unsigned) time(&t));
     
     for(i = 0; i < n; i++){
-        printf("%d\n", rand() % 5);
+        printf("%d\n", rand() % 5); //between 5 excluding 5
     }
 ```
