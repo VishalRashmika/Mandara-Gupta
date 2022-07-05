@@ -41,12 +41,12 @@ int main(){
     int i, n;
     time_t t;
 
-    n = 10;
+    n = 100;
 
     srand((unsigned) time(&t));
     
     for(i = 0; i < n; i++){
-        printf("%d\n", rand() % 100);
+        printf("%d\n", rand() % 5);
     }
 
 
