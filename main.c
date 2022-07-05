@@ -9,6 +9,7 @@ char *shift_cipher_decrypt();
 char *mandaragupta_encrypt();
 char *mandaragupta_simplified_encrypt();
 char *mandaragupta_decrypt();
+char *mandaragupta_simplified_decrypt();
 void usage();
 void logo();
 
@@ -24,43 +25,43 @@ char test_var[MAX_VALUE];
 
 //DATABASE
 char *db[] = {
-	/*0 - space*/ "Karma has no menu, you get served what you deserve",                              // 
-    /*1 - 0*/ "If anything is worth doing, do it with all your heart",                               //48 - 47 = 1 
-    /*2 - 1*/ "Better to be slapped with the truth than kissed with a lie",                          //49 - 47 = 2
-    /*3 - 2*/ "The trouble is you think you have time",                                              //50 - 47 = 3
-    /*4 - 3*/ "Let the past make you better, not bitter",                                            //51 - 47 = 4
-    /*5 - 4*/ "It is easy to see faults of others, but difficult to see one's own faults",           //52 - 47 = 5
-    /*6 - 5*/ "There is no fear for one whose mind is not filled with desires",                      //53 - 47 = 6
-    /*7 - 6*/ "Sometimes silence is the best solution",                                              //54 - 47 = 7
-    /*8 - 7*/ "Radiate boundless love towards the entire world",                                     //55 - 47 = 8
-    /*9 - 8*/ "A disciplined mind brings happiness",                                                 //56 - 47 = 9
-    /*10 - 9*/ "Give, even if you only have a little",                                               //57 - 47 = 10 
-    /*11 - A*/ "Those who cling to perceptions and views wander the world offending people",                            //65 - 54 = 11 
-    /*12 - B*/ "Drop by drop is the water pot filled",
-    /*13 - C*/ "Conquer anger with non anger, conquer badness with goodness, conquer meanness with generosity",
-    /*14 - D*/ "Those who cling to perceptions and views wander the world offending people",
-    /*15 - E*/ "I will not look at another's bowl intent on finding fault: a training to be observed",
-    /*16 - F*/ "May all beings have happy mind",
-    /*17 - G*/ "Delight in heedfulness! Guard well your thoughts!",
-    /*18 - H*/ "Live with no sense of mine, not forming attachments to experiences",
-    /*19 - I*/ "Resolutely train your self to attain peace",
-    /*20 - J*/ "The root of suffering is attachment",
-    /*21 - K*/ "understanding is the heartwood of well-spoken words",
-    /*22 - L*/ "The only failure in life is not to be true to the best one knows",
-    /*23 - M*/ "You cannot travel the path until you have become the path itself",
-    /*24 - N*/ "What we think, we become",
-    /*25 - O*/ "Nothing remains without change",
-    /*26 - P*/ "He will win who knows when to fight and when not to fight.",
-    /*27 - Q*/ "Life is Suffering",
-    /*28 - R*/ "Love the whole world as a mother loves her only child",
-    /*29 - S*/ "Health is the gratest gift, contentment is the greatest wealth",
-    /*30 - T*/ "Purity and impurity depend on oneself; no one can purify another",
-    /*31 - U*/ "whatever has the nature of arising has the nature of ceasing ",
-    /*32 - V*/ "I do not dispute with the world; rather it is the world that disputes me",
-    /*33 - W*/ "chaos is inherent in all compunded things, strive on with diligence",
-    /*34 - X*/ "Intelligence is the ability to adopt to change",
-    /*35 - Y*/ "Something is better than nothing",
-    /*36 - Z*/ "Anything too much is not good",                                                                        //90 - 54 = 36
+	/*0 - space*/ "Karma has no menu, you get served what you deserve.\n",                              // 
+    /*1 - 0*/ "If anything is worth doing, do it with all your heart.\n",                               //48 - 47 = 1 
+    /*2 - 1*/ "Better to be slapped with the truth than kissed with a lie.\n",                          //49 - 47 = 2
+    /*3 - 2*/ "The trouble is you think you have time.\n",                                              //50 - 47 = 3
+    /*4 - 3*/ "Let the past make you better, not bitter.\n",                                            //51 - 47 = 4
+    /*5 - 4*/ "It is easy to see faults of others, but difficult to see one's own faults.\n",           //52 - 47 = 5
+    /*6 - 5*/ "There is no fear for one whose mind is not filled with desires.\n",                      //53 - 47 = 6
+    /*7 - 6*/ "Sometimes silence is the best solution.\n",                                              //54 - 47 = 7
+    /*8 - 7*/ "Radiate boundless love towards the entire world.\n",                                     //55 - 47 = 8
+    /*9 - 8*/ "A disciplined mind brings happiness.\n",                                                 //56 - 47 = 9
+    /*10 - 9*/ "Give, even if you only have a little.\n",                                               //57 - 47 = 10 
+    /*11 - A*/ "Those who cling to perceptions and views wander the world offending people.\n",                            //65 - 54 = 11 
+    /*12 - B*/ "Drop by drop is the water pot filled.\n",
+    /*13 - C*/ "Conquer anger with non anger, conquer badness with goodness, conquer meanness with generosity.\n",
+    /*14 - D*/ "Those who cling to perceptions and views wander the world offending people.\n",
+    /*15 - E*/ "I will not look at another's bowl intent on finding fault: a training to be observed.\n",
+    /*16 - F*/ "May all beings have happy mind.\n",
+    /*17 - G*/ "Delight in heedfulness! Guard well your thoughts!.\n",
+    /*18 - H*/ "Live with no sense of mine, not forming attachments to experiences.\n",
+    /*19 - I*/ "Resolutely train your self to attain peace.\n",
+    /*20 - J*/ "The root of suffering is attachment.\n",
+    /*21 - K*/ "understanding is the heartwood of well-spoken words.\n",
+    /*22 - L*/ "The only failure in life is not to be true to the best one knows.\n",
+    /*23 - M*/ "You cannot travel the path until you have become the path itself.\n",
+    /*24 - N*/ "What we think, we become.\n",
+    /*25 - O*/ "Nothing remains without change.\n",
+    /*26 - P*/ "He will win who knows when to fight and when not to fight.\n.\n",
+    /*27 - Q*/ "Life is Suffering.\n",
+    /*28 - R*/ "Love the whole world as a mother loves her only child.\n",
+    /*29 - S*/ "Health is the gratest gift, contentment is the greatest wealth.\n",
+    /*30 - T*/ "Purity and impurity depend on oneself; no one can purify another.\n",
+    /*31 - U*/ "whatever has the nature of arising has the nature of ceasing.\n",
+    /*32 - V*/ "I do not dispute with the world; rather it is the world that disputes me.\n",
+    /*33 - W*/ "chaos is inherent in all compunded things, strive on with diligence.\n",
+    /*34 - X*/ "Intelligence is the ability to adopt to change.\n",
+    /*35 - Y*/ "Something is better than nothing.\n",
+    /*36 - Z*/ "Anything too much is not good.\n",                                                                        //90 - 54 = 36
 };
 
 char *sanskrit_db[] = {
@@ -218,7 +219,7 @@ char *mandaragupta_encrypt(char *text){
         else{
             strncat(encrypted_text, &character2, 1);
         }
-        strcat(encrypted_text, "");
+        //strcat(encrypted_text, "");
     }
     printf("%s", encrypted_text);
 }
@@ -249,9 +250,13 @@ char *mandaragupta_simplified_encrypt(char *text){
         else{
             strncat(encrypted_text, &character2, 1);
         }
-        strcat(encrypted_text, "");
+        //strcat(encrypted_text, "");
     }
     printf("%s", encrypted_text);
+}
+
+char *mandaragupta_simplified_decrypt(char *text){
+    printf("TODO");
 }
 
 void usage(){
