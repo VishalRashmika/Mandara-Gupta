@@ -14,9 +14,11 @@ void logo();
 //Global Variables
 #define MAX_VALUE 65536
 char character;
+char character2;
 char text[MAX_VALUE];
 char shifted_text[MAX_VALUE];
 char unshifted_text[MAX_VALUE];
+char encrypted_text[MAX_VALUE];
 char test_var[MAX_VALUE];
 
 //DATABASE
@@ -156,20 +158,28 @@ char *shift_cipher_decrypt(char str[], int key){
 }
 
 char *mandaragupta_encrypt(char *text){
-	printf("TODO\n");
 	printf("INSIDE THE MG_ENCRYPT CRYPT\n");
 
     for (int i = 0; i <= strlen(text); i++){
-        printf("%i\n", text[i]);
+        character2 = text[i];
+        if(character2 >= 'A' && character2 <= 'Z'){
+            //printf("%c\n", character2);
+            strncat(encrypted_text, &character2, 1);
+        }
+        else if(character2 >= '0' && character2 <= '9'){
+            //printf("%c\n", character2);
+            strncat(encrypted_text, &character2, 1);
+        }
+        else{
+            //printf("%c", character2);
+            strncat(encrypted_text, &character2, 1);
+        }
     }
-    
+    printf("%s\n", encrypted_text);
 }
 
 char *mandaragupta_decrypt(char *text){
-    //char *test1[] = {"HELLO WOrld", "AO", "awda", "123"};
-
-	printf("TODO\n");
-	printf("INSIDE THE MG_ENCRYPT CRYPT\n");
+	printf("INSIDE THE MG_DECRYPT CRYPT\n");
     //printf("%s\n", db[0]);
 	printf("%s\n", unshifted_text);
 }
