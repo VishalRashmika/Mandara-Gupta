@@ -162,17 +162,22 @@ char *mandaragupta_encrypt(char *text){
 
     for (int i = 0; i <= strlen(text); i++){
         character2 = text[i];
+        char space[] = "damn";
         if(character2 >= 'A' && character2 <= 'Z'){
             //printf("%c\n", character2);
-            strncat(encrypted_text, &character2, 1);
+            //strncat(encrypted_text, &character2, 1);
+            strcat(encrypted_text, &character2);
         }
         else if(character2 >= '0' && character2 <= '9'){
             //printf("%c\n", character2);
-            strncat(encrypted_text, &character2, 1);
+            //strncat(encrypted_text, &character2, 1);
+            strcat(encrypted_text, &character2);
         }
         else{
             //printf("%c", character2);
-            strncat(encrypted_text, &character2, 1);
+            //strncat(encrypted_text, "&character2", 1);
+            char space[] = "Damn";
+            strcat(encrypted_text, space);
         }
     }
     printf("%s\n", encrypted_text);
