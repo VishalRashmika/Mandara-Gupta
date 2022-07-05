@@ -45,7 +45,6 @@ chaos is inherent in all compunded things, strive on with diligence.            
 Intelligence is the ability to adopt to change.                                                बुद्धिः परिवर्तनं कर्तुं स्वीकर्तुं क्षमता अस्ति।                       
 Something is better than nothing.                                                              किमपि न किमपि श्रेयस्करम्।         
 anything too much is not good.                                                                 किमपि अतिशयेन न हितकरम्।      
-Whoever is happy will make others happy too.
 
 
 
