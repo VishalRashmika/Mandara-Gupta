@@ -25,11 +25,11 @@ Conquer anger with non anger, conquer badness with goodness, conquer meanness wi
 Those who cling to perceptions and views wander the world offending people.                    ये प्रतीतिदृष्टिषु आलम्बन्ते जनाः आक्षेपं कुर्वन्तः लोकं भ्रमन्ति।                                                    
 I will not look at another's bowl intent on finding fault: a training to be observed.          अहं दोषं अन्वेष्टुं परस्य कटोराभिप्रायं न पश्यामि: अवलोकनीयं प्रशिक्षणम्।                                                                        
 May all beings have happy mind.                                                                सर्वेषां भूतानां सुखमनः भवतु।                  
-Delight in heedfulness! Guard well your thoughts!.                                             सावधानता में आनन्दित हों ! भवतः विचाराणां सम्यक् रक्षणं कुर्वन्तु!.                                      
+Delight in heedfulness! Guard well your thoughts.                                             सावधानता में आनन्दित हों ! भवतः विचाराणां सम्यक् रक्षणं कुर्वन्तु!.                                      
 Live with no sense of mine, not forming attachments to experiences.                            न मम भावेन सह जीवन्तु, अनुभवेषु आसक्तिं न निर्माय।                                                      
 Resolutely train your self to attain peace.                                                    शान्तिप्राप्त्यर्थं दृढनिश्चयेन स्वस्य आत्मनः प्रशिक्षणं कुरुत।                              
 The root of suffering is attachment.                                                           दुःखस्य मूलं आसक्तिः।                                                                                       
-understanding is the heartwood of well-spoken words.                                           अवगमनं सुभाषितानां हृदयम् |                                  
+understanding is the heartwood of well-spoken words.                                           अवगमनं सुभाषितानां हृदयम्।                                  
 The only failure in life is not to be true to the best one knows.                              जीवने एकमात्रं असफलता अस्ति यत् उत्तमं जानाति तस्य सत्यं न भवेत्।                                               
 You cannot travel the path until you have become the path itself.                              न त्वं मार्गं गन्तुं न शक्नोषि यावत् त्वं मार्ग एव न भवसि ।                                               
 What we think, we become.                                                                      यत् चिन्तयामः, वयं भवेम।       
@@ -45,7 +45,7 @@ chaos is inherent in all compunded things, strive on with diligence.            
 Intelligence is the ability to adopt to change.                                                बुद्धिः परिवर्तनं कर्तुं स्वीकर्तुं क्षमता अस्ति।                       
 Something is better than nothing.                                                              किमपि न किमपि श्रेयस्करम्।         
 anything too much is not good.                                                                 किमपि अतिशयेन न हितकरम्।      
-
+Whoever is happy will make others happy too.
 
 
 
