@@ -8,42 +8,42 @@ numbers from 0-9
 
 
 ## Quotes
-Karma has no menu, you get served what you deserve
-If anything is worth doing, fo it with all your heart
-Better to be slapped with the truth than kissed with a lie
-The trouble is you think you have time
-Let the past make you better, not bitter
-It is easy to see faults of others, but difficult to see one's own faults
-There is no fear for one whose mind is not filled with desires
-Sometimes silence is the best solution
-Radiate boundless love towards the entire world
-A disciplined mind brings happiness
-Give, even if you only have a little
-Those who cling to perceptions and views wander the world offending people
-Drop by drop is the water pot filled
-Conquer anger with non anger, conquer badness with goodness, conquer meanness with generosity
-Those who cling to perceptions and views wander the world offending people
-I will not look at another's bowl intent on finding fault: a training to be observed
-May all beings have happy mind
-Delight in heedfulness! Guard well your thoughts!
-Live with no sense of mine, not forming attachments to experiences
-Resolutely train your self to attain peace
-The root of suffering is attachment
-understanding is the heartwood of well-spoken words
-The only failure in life is not to be true to the best one knows
-You cannot travel the path until you have become the path itself
-What we think, we become
-Nothing remains without change
-With Mindfulness, strive on
-Life is Suffering
-Love the whole world as a mother loves her only child
-Health is the gratest gift, contentment is the greatest wealth
-Purity and impurity depend on oneself; no one can purify another
-whatever has the nature of arising has the nature of ceasing 
-I do not dispute with the world; rather it is the world that disputes me
-chaos is inherent in all compunded things, strive on with diligence
-Intelligence is the ability to adopt to change
-Something is better than nothing
+Karma has no menu, you get served what you deserve.
+If anything is worth doing, fo it with all your heart.
+Better to be slapped with the truth than kissed with a lie.
+The trouble is you think you have time.
+Let the past make you better, not bitter.
+It is easy to see faults of others, but difficult to see one's own faults.
+There is no fear for one whose mind is not filled with desires.
+Sometimes silence is the best solution.
+Radiate boundless love towards the entire world.
+A disciplined mind brings happiness.
+Give, even if you only have a little.
+Those who cling to perceptions and views wander the world offending people.
+Drop by drop is the water pot filled.
+Conquer anger with non anger, conquer badness with goodness, conquer meanness with generosity.
+Those who cling to perceptions and views wander the world offending people.
+I will not look at another's bowl intent on finding fault: a training to be observed.
+May all beings have happy mind.
+Delight in heedfulness! Guard well your thoughts!.
+Live with no sense of mine, not forming attachments to experiences.
+Resolutely train your self to attain peace.
+The root of suffering is attachment.
+understanding is the heartwood of well-spoken words.
+The only failure in life is not to be true to the best one knows.
+You cannot travel the path until you have become the path itself.
+What we think, we become.
+Nothing remains without change.
+With Mindfulness, strive on.
+Life is Suffering.
+Love the whole world as a mother loves her only child.
+Health is the gratest gift, contentment is the greatest wealth.
+Purity and impurity depend on oneself; no one can purify another.
+whatever has the nature of arising has the nature of ceasing.
+I do not dispute with the world; rather it is the world that disputes me.
+chaos is inherent in all compunded things, strive on with diligence.
+Intelligence is the ability to adopt to change.
+Something is better than nothing.
 anything too much is not good.
 
 

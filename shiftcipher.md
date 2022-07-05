@@ -17,3 +17,30 @@ int main() {
    return 0;
 }
 ```
+
+# Split by delimiter func
+```
+char string[50] = "Hello World How are you!! !";
+
+char * token = strtok(string, " ");
+
+while(token != NULL){
+   printf("%s\n", token);
+   token = strtok(NULL, " ");
+}
+```
+
+# Rand Numbers
+```
+#include<time.h>
+int i, n;
+    time_t t;
+
+    n = 100;
+
+    srand((unsigned) time(&t));
+    
+    for(i = 0; i < n; i++){
+        printf("%d\n", rand() % 5);
+    }
+```
