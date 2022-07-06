@@ -21,6 +21,7 @@ char text[MAX_VALUE];
 char shifted_text[MAX_VALUE];
 char unshifted_text[MAX_VALUE];
 char encrypted_text[MAX_VALUE];
+char decrypted_text[MAX_VALUE];
 char test_var[MAX_VALUE];
 
 //DATABASE
@@ -122,15 +123,15 @@ int main()
     
     //ENCRYPTION
 	//Shift Cipher
-	shift_cipher_encrypt(text, 5);
+	//shift_cipher_encrypt(text, 5);
 	//Invoking The Main Crypt
-	mandaragupta_encrypt(shifted_text);
-    printf("END\n");
+	//mandaragupta_encrypt(shifted_text);
+    //printf("END\n");
 
     //DECRYPTION
     //printf("%s\n", text);
     //shift_cipher_decrypt(text, -5);
-    //mandaragupta_encrypt(unshifted_text);
+    mandaragupta_decrypt(text);
 
     //GENERAL
     //printf("%s\n", db[1]);
@@ -226,8 +227,14 @@ char *mandaragupta_encrypt(char *text){
 
 char *mandaragupta_decrypt(char *text){
 	printf("INSIDE THE MG_DECRYPT CRYPT\n");
-    //printf("%s\n", db[0]);
-	printf("%s\n", unshifted_text);
+    char * token = strtok(text, ".");
+
+    while(token != NULL){
+        printf("%s\n", token);
+        //Todo build func to analyze the letters either func or internal code here
+        token = strtok(NULL, ".");
+    }
+	//decrypted_text var
 }
 
 char *mandaragupta_simplified_encrypt(char *text){
