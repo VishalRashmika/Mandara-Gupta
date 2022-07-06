@@ -50,14 +50,3 @@
 |				|				|				|				|				|				|
 |				|				|				|				|				|				|
 |				|				|				|				|				|				|
-
-
-petals : 5
-
-अमूल्य
-गूढसञ्चिका
-विलीन
-उपम्लुप्त
-
-A = abhaya, asapatna | Peace
-B = akrūra, | gentle 
