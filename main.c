@@ -10,6 +10,7 @@ char *mandaragupta_encrypt();
 char *mandaragupta_simplified_encrypt();
 char *mandaragupta_decrypt();
 char *mandaragupta_simplified_decrypt();
+char *analyzer();
 void usage();
 void logo();
 
@@ -22,7 +23,7 @@ char shifted_text[MAX_VALUE];
 char unshifted_text[MAX_VALUE];
 char encrypted_text[MAX_VALUE];
 char decrypted_text[MAX_VALUE];
-char test_var[MAX_VALUE];
+char analyzed_text[MAX_VALUE];
 
 //DATABASE
 char *db[] = {
@@ -232,6 +233,17 @@ char *mandaragupta_decrypt(char *text){
     while(token != NULL){
         printf("%s\n", token);
         //Todo build func to analyze the letters either func or internal code here
+
+        switch(*token)
+        {
+            case &sanskrit_db[0]:
+                strcat(analyzed_text, " ");
+                break;
+
+            default:
+                break;
+        }
+
         token = strtok(NULL, ".");
     }
 	//decrypted_text var
@@ -260,6 +272,10 @@ char *mandaragupta_simplified_encrypt(char *text){
         //strcat(encrypted_text, "");
     }
     printf("%s", encrypted_text);
+}
+char *analyzer(char *text){
+    printf("INSIDE THE ANALYZER\n");
+
 }
 
 char *mandaragupta_simplified_decrypt(char *text){
