@@ -24,8 +24,9 @@ char unshifted_text[MAX_VALUE];
 char encrypted_text[MAX_VALUE];
 char decrypted_text[MAX_VALUE];
 char analyzed_text[MAX_VALUE];
+char tokens[MAX_VALUE];
 
-//DATABASE
+//ENGLISH DATABASE
 char *db[] = {
 	/*0 - space*/ "Karma has no menu, you get served what you deserve.\n",                              //32 - 32 = 0 
     /*1 - 0*/ "If anything is worth doing, do it with all your heart.\n",                               //48 - 47 = 1 
@@ -66,6 +67,7 @@ char *db[] = {
     /*36 - Z*/ "Anything too much is not good.\n",                                                                        //90 - 54 = 36
 };
 
+//SANSKRIT DATABASE
 char *sanskrit_db[] = {
 	/*0 - space*/ "कर्मस्य मेनू नास्ति, भवन्तः यत् अर्हन्ति तत् परोक्ष्यन्ति.\n",
     /*1 - 0*/ "यदि किमपि कर्तुं योग्यं भवति तर्हि फो तत् सर्वहृदयेन.\n",
@@ -84,7 +86,7 @@ char *sanskrit_db[] = {
     /*14 - D*/ "ये प्रतीतिदृष्टिषु आलम्बन्ते जनाः आक्षेपं कुर्वन्तः लोकं भ्रमन्ति.\n",
     /*15 - E*/ "अहं दोषं अन्वेष्टुं परस्य कटोराभिप्रायं न पश्यामि: अवलोकनीयं प्रशिक्षणम्.\n",
     /*16 - F*/ "सर्वेषां भूतानां सुखमनः भवतु.\n",
-    /*17 - G*/ "Delight in heedfulness! Guard well your thought.!\n", /////////////////////////////////////
+    /*17 - G*/ "DELIGHT IN HEEDFULNESS! GUARD WELL YOUR THOUGHT", // TO ADD PERIOD AND LINE BREAK
     /*18 - H*/ "न मम भावेन सह जीवन्तु, अनुभवेषु आसक्तिं न निर्माय.\n",
     /*19 - I*/ "शान्तिप्राप्त्यर्थं दृढनिश्चयेन स्वस्य आत्मनः प्रशिक्षणं कुरुत.\n",
     /*20 - J*/ "दुःखस्य मूलं आसक्तिः.\n",
@@ -105,6 +107,12 @@ char *sanskrit_db[] = {
     /*35 - Y*/ "किमपि न किमपि श्रेयस्करम्.\n",
     /*36 - Z*/ "किमपि अतिशयेन न हितकरम्.\n",
 };
+
+//character index based DB
+char *char_db[] = {
+    " ", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
+    };
 
 //Main Function
 int main()
@@ -229,24 +237,30 @@ char *mandaragupta_encrypt(char *text){
 char *mandaragupta_decrypt(char *text){
 	printf("INSIDE THE MG_DECRYPT CRYPT\n");
     char * token = strtok(text, ".");
-
     while(token != NULL){
-        printf("%s\n", token);
-        //Todo build func to analyze the letters either func or internal code here
+        //printf("%s\n", token);
 
-        switch(*token)
-        {
-            case &sanskrit_db[0]:
-                strcat(analyzed_text, " ");
-                break;
+        //TODO: SHOULD BUILD A FUNC TO APPEND EACH TOKEN TO 'tokens' ARRAY NOT TO CONCAT
+        strcat(tokens, token);
 
-            default:
-                break;
-        }
-
+        //TODO: build func to analyze the letters either func or internal code here
+        // for(int i = 0;i <= 36;i++){
+        //     if (token == sanskrit_db[i]){
+        //         strcat(decrypted_text, char_db[i]);
+        //         strcat(decrypted_text, "HELLO WORLD");
+        //     }
+        //     strcat(decrypted_text, char_db[i]);
+        // }
+        // if (token == sanskrit_db[17]){
+        //     strcat(decrypted_text, "HELLO WORLD");
+        // }
         token = strtok(NULL, ".");
     }
-	//decrypted_text var
+    //strcat(decrypted_text, sanskrit_db[17]);
+    printf("%c\n", tokens[0]);
+    printf("%c\n", tokens[1]);
+    printf("%c\n", tokens[2]);
+    //printf("decrypted text : %s\n", decrypted_text);
 }
 
 char *mandaragupta_simplified_encrypt(char *text){
@@ -273,6 +287,7 @@ char *mandaragupta_simplified_encrypt(char *text){
     }
     printf("%s", encrypted_text);
 }
+
 char *analyzer(char *text){
     printf("INSIDE THE ANALYZER\n");
 
@@ -295,18 +310,8 @@ void logo(){
 
     time_t t;
     int n = 1; //amount of numbers
-
     srand((unsigned) time(&t));
     for(int i = 0; i < n; i++){
-        //printf("%d\n", rand() % 100); //between
-        printf("%s", logo[rand() % 2]);
+        printf("%s", logo[rand() % 2]); //BETWEEN 2 EXCLUDING 2
     }
-
-    // printf("%s", logo[0]);
 }
-
-
-
-
-
-
