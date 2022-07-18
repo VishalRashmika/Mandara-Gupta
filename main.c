@@ -24,7 +24,8 @@ char unshifted_text[MAX_VALUE];
 char encrypted_text[MAX_VALUE];
 char decrypted_text[MAX_VALUE];
 char analyzed_text[MAX_VALUE];
-char tokens[MAX_VALUE];
+//char tokens[MAX_VALUE];
+//char test[28];
 
 //ENGLISH DATABASE
 char *db[] = {
@@ -238,29 +239,34 @@ char *mandaragupta_decrypt(char *text){
 	printf("INSIDE THE MG_DECRYPT CRYPT\n");
     char * token = strtok(text, ".");
     while(token != NULL){
-        //printf("%s\n", token);
+        printf("%s\n", token);
 
-        //TODO: SHOULD BUILD A FUNC TO APPEND EACH TOKEN TO 'tokens' ARRAY NOT TO CONCAT
-        strcat(tokens, token);
+        /*
+        TODO: SHOULD BUILD A FUNC TO APPEND EACH TOKEN TO 'tokens' ARRAY NOT TO CONCAT
+                The value of the string should be completely removed and be replaced with the new token each time the loop runs from the beginning, strcat will keep concatinating the whole shit to a one line.
+        METHOD! : Build a for loop to append every char in the 'token' to an new array to analyze that new array.        
+        */ 
 
         //TODO: build func to analyze the letters either func or internal code here
-        // for(int i = 0;i <= 36;i++){
-        //     if (token == sanskrit_db[i]){
-        //         strcat(decrypted_text, char_db[i]);
-        //         strcat(decrypted_text, "HELLO WORLD");
-        //     }
-        //     strcat(decrypted_text, char_db[i]);
-        // }
-        // if (token == sanskrit_db[17]){
-        //     strcat(decrypted_text, "HELLO WORLD");
-        // }
+        for(int i = 0;i <= 36;i++){
+            if(strcmp(token, sanskrit_db[i]) == 0){
+                char *letter = char_db[i];
+                strcat(decrypted_text, letter);
+            }
+            strcat(decrypted_text, char_db[i]);
+        }
+        decrypted_text[0] = 'G';
+        ////////////if (strcmp(token, sanskrit_db[17]) == 0){
+        ////////////    //strcat(decrypted_text, "HELLO WORLD");
+        ////////////    decrypted_text[1] = 'h';
+        ////////////    decrypted_text[2] = 'w';
+        ////////////}
+
+
         token = strtok(NULL, ".");
     }
-    //strcat(decrypted_text, sanskrit_db[17]);
-    printf("%c\n", tokens[0]);
-    printf("%c\n", tokens[1]);
-    printf("%c\n", tokens[2]);
-    //printf("decrypted text : %s\n", decrypted_text);
+    printf("decrypted text : %s\n", decrypted_text);
+
 }
 
 char *mandaragupta_simplified_encrypt(char *text){
